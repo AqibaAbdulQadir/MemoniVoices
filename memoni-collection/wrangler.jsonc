@@ -1,0 +1,22 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "memoni-collection-api",
+    "main": "worker/index.ts",
+    "compatibility_date": "2026-10-28",
+    "vars": {
+        "FRONTEND_ORIGIN": "https://memoni-voices.pages.dev"
+    },
+    "d1_databases": [
+        {
+            "binding": "DB",
+            "database_name": "memoni-collection-db",
+            "database_id": "49cfa910-1247-47a3-94c1-0bc05edce0a8"
+        }
+    ],
+    "r2_buckets": [
+        {
+            "binding": "AUDIO",
+            "bucket_name": "memoni-audio"
+        }
+    ]
+}
